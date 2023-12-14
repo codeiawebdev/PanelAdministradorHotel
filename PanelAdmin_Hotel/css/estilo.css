@@ -1,0 +1,205 @@
+/* START BODY */
+/* Oculta la barra de desplazamiento */
+body {
+    scrollbar-width: thin;
+    /* Para navegadores basados en Firefox */
+    scrollbar-color: transparent transparent;
+    /* Para navegadores basados en Firefox */
+    overflow: auto;
+    /* Permite el desplazamiento */
+}
+
+/* Personaliza la apariencia de la barra de desplazamiento para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Color del fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 73, 94);
+    /* Color del pulgar de la barra de desplazamiento */
+}
+
+/* END BODY */
+
+/* START ASIDE */
+.custom-left-panel {
+    background: #fff;
+    height: 100vh;
+    padding: 0;
+    vertical-align: top;
+    width: 280px;
+    -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    z-index: 999;
+    overflow-x: scroll;
+}
+
+.custom-left-panel .custom-main-menu {
+    width: 100%;
+}
+
+.custom-left-panel .custom-main-menu li {
+    width: 100%;
+}
+
+/* END ASIDE */
+
+/* START RIGHT-PANEL */
+.custom-right-panel {
+    background: #f1f2f7;
+    margin-top: 55px;
+    margin-left: 280px;
+}
+
+/* Estilos para pantallas igual o menor a 992px */
+@media (max-width: 992px) {
+    .custom-right-panel {
+        margin-left: 0;
+    }
+}
+
+/* END RIGHT-PANEL */
+
+/* START HEADER */
+.custom-header {
+    background: #fff;
+    border-bottom: 1px solid #e8e9ed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    clear: both;
+    padding: 0 30px;
+    height: 55px;
+    position: fixed;
+    left: 280px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-header .navbar-header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 1.25em 0 0;
+}
+
+.custom-header .custom-img {
+    max-width: 145px;
+}
+
+.custom-header .custom-menu-toggler {
+    background-color: transparent;
+    color: #212529;
+    border: transparent;
+}
+
+.custom-header .custom-top-right .custom-container-dropdown {
+    display: flex;
+}
+
+.custom-header .custom-top-right .custom-container-dropdown .dropdown {
+    padding-left: 5px;
+}
+
+.custom-header .custom-for-notification .dropdown-menu {
+    width: 300px;
+}
+
+.custom-header .custom-dropdown-icon {
+    float: left;
+    margin-right: 15px;
+    width: 25px;
+}
+
+.custom-header .custom-dropdown-notification {
+    overflow: hidden;
+    flex: 1;
+}
+
+.custom-header .custom-dropdown-notification .custom-dropdown-text {
+    white-space: normal;
+    clear: both;
+}
+
+.custom-header .custom-dropdown-notification .custom-dropdown-time {
+    font-size: 11px;
+    float: right;
+}
+
+.custom-header .custom-for-message .dropdown-menu {
+    width: 300px;
+}
+
+.custom-header .custom-dropdown-photo {
+    float: left;
+    margin-right: 15px;
+    width: 25px;
+}
+
+.custom-header .custom-dropdown-photo img {
+    max-width: 100%;
+}
+
+.custom-header .custom-dropdown-message {
+    overflow: hidden;
+    flex: 1;
+}
+
+.custom-header .custom-dropdown-message .custom-dropdown-name {
+    margin-top: -5px;
+    float: left;
+}
+
+.custom-header .custom-dropdown-message .custom-dropdown-time {
+    font-size: 11px;
+    float: right;
+}
+
+.custom-header .custom-dropdown-message .custom-dropdown-text {
+    white-space: normal;
+    clear: both;
+}
+
+/* END HEADER */
+
+/* START MAIN */
+.custom-chart {
+    width: 100%;
+    min-height: 400px;
+}
+
+/* END MAIN */
+
+
+
+.dropdown-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #a0a0a0; /* Color del "pulgar" (barra de desplazamiento) */
+    border-radius: 4px; /* Bordes redondeados del pulgar */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Color de fondo de la pista de la barra de desplazamiento */
+}
